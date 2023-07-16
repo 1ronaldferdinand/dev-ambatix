@@ -124,7 +124,7 @@
 
                             <div class="row100">
                                 <div class="inputBox">
-                                    <button type="submit" class="btn btn-primary1" style="width: 15%;" onclick="move('thankss.html')">KIRIM</button>
+                                    <button type="submit" class="btn btn-primary1" style="width: 15%;">KIRIM</button>
                                 </div>
                             </div>
                         </div>
@@ -210,4 +210,25 @@
     function move(address){
         window.location.href = address;
     }
+
+    // Function to handle form submission
+    function handleFormSubmission(event) {
+        event.preventDefault(); // Prevent the form from being submitted
+        
+        // Perform form validation
+        const form = document.querySelector('form');
+        if (form.checkValidity()) {
+            move('Makasih.html'); // Submit the form or navigate to Makasih.html
+        } else {
+            event.stopPropagation(); // Prevent event bubbling
+        }
+        
+        form.classList.add('was-validated'); // Add "was-validated" class to display validation feedback
+    }
+    
+    // Get the form element
+    const form = document.querySelector('form');
+    
+    // Add event listener to form submission
+    form.addEventListener('submit', handleFormSubmission);
 </script>
