@@ -195,3 +195,23 @@
   color: var(--maroon) !important;
   box-shadow: 1px 1px 3px rgba(99, 0, 0, 1);
 }
+
+@media (max-width: 986px){
+  .order {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .order-form {
+    width: 100%;
+  }
+
+  .keranjang {
+    width: 100%;
+  }
+
+  .container-foot{
+    margin-top: 4rem;
+  }
+}
