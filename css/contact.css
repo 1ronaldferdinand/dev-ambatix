@@ -197,7 +197,7 @@ body {
     }
 
     .contactUs {
-        padding: 20px;
+        padding: 80px 20px 0 20px;
     }
 
     .box {
@@ -230,6 +230,7 @@ body {
 
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -267,13 +268,6 @@ body {
 
 .navbar .navbarnih a:hover {
   color: var(--putih);
-}
-
-.navbar .navbar-extra span {
-  margin: 0 0.5rem;
-  color: var(--pink);
-  display: inline-flex;
-  text-decoration: none;
 }
 
 .navbar .navbar-extra span:hover {
